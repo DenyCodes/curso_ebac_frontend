@@ -1,97 +1,286 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/BOOTSTRAP AVANÇADO/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/pagina/style.css">
 </head>
 <body>
-    <header>
-        <div class="container container-flex">
-            <h1>Formulario</h1>
-            <div class="menu-hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>GAMES</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">jogos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="btn-checar-emails" class="btn btn-warning" type="button">Checar caixa de entrada</button>
             </div>
         </div>
-        <nav>
-            <div class="container container-flex">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">contato</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Termos de serviço</a></li>
-                    <li><a href="#">Politica de privacidade</a></li>
-                </ul>
-            </div>
-        </nav>
-        
     </header>
-    <section id="contato">
-        <div class="container container-flex">
-            <form>
-                <div class="form-campo">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome">
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <div class="container">
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100"src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/aqZdSwWyy9JcQ66BxHDKrky6.jpg" />
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100"src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc04e4637524166dc/621853fd6be1e66143a66db2/022822_TakeoverCap_Banner.jpg" />
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100"src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/f33b4d3e-3a19-4221-bf40-6bf0d12175ce/dcrjckp-f98cbde1-e88d-4a33-bccf-97a249cc9dba.jpg/v1/fill/w_1197,h_668,q_70,strp/wallpaper_desktop_mobile_legend_marksman_by_fachrifhr_dcrjckp-pre.jpg" />
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
                 </div>
-                <div class="form-campo">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
                 </div>
-                <div class="form-campo">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone">
+            </div>
+        </section>
+        <section id="produtos">
+            <nav>
+                .
+            </nav>
+            <div class="container">
+                <nav class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Valorant</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Mobile legends</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">God of war</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <div class="card-header">
+                                        VALORANT
+                                    </div>
+                                    <img src="https://assets2.rockpapershotgun.com/valorant-agent-raze.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/valorant-agent-raze.jpg"/>
+                                    <div class="card-body">
+                                        <h3 class="card-title">CAMPEÃO DUELISTA</h3>
+                                        <h4 class="card-subtitle">RAZE</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde minima rem eaque laborum ullam delectus ad ab? Corporis accusantium quam ipsum amet quia tempora rem possimus quas minus sint!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <div class="card-header">
+                                        VALORANT
+                                    </div>
+                                    <img src="https://theclutch.com.br/wp-content/uploads/2021/02/Valorant-Reyna-1.jpg"/>
+                                    <div class="card-body">
+                                        <h3 class="card-title">CAMPEÃO DUELISTA</h3>
+                                        <h4 class="card-subtitle">REYNA</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde minima rem eaque laborum ullam delectus ad ab? Corporis accusantium quam ipsum amet quia tempora rem possimus quas minus sint!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <div class="card-header">
+                                        VALORANT
+                                    </div>
+                                    <img src="https://wallpapercave.com/wp/wp6497043.jpg"/>
+                                    <div class="card-body">
+                                        <h3 class="card-title">CAMPEÃO DUELISTA</h3>
+                                        <h4 class="card-subtitle">PHOENIX</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde minima rem eaque laborum ullam delectus ad ab? Corporis accusantium quam ipsum amet quia tempora rem possimus quas minus sint!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <div class="card-header">
+                                        Mobile legends
+                                    </div>
+                                    <img src="https://besthqwallpapers.com/Uploads/5-9-2021/178121/thumb2-phantom-knight-leomord-4k-blue-neon-lights-mobile-legends-creative.jpg"/>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Soldado</h3>
+                                        <h4 class="card-subtitle">Leomord</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde minima rem eaque laborum ullam delectus ad ab? Corporis accusantium quam ipsum amet quia tempora rem possimus quas minus sint!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <div class="card-header">
+                                        Mobile legends
+                                    </div>
+                                    <img src="http://pm1.narvii.com/7898/d23a0b366f40f890030d89f52e65ff229f91228fr1-713-430v2_uhq.jpg"/>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Mago</h3>
+                                        <h4 class="card-subtitle">Lilya</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde minima rem eaque laborum ullam delectus ad ab? Corporis accusantium quam ipsum amet quia tempora rem possimus quas minus sint!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <div class="card-header">
+                                        Mobile legends
+                                    </div>
+                                    <img src="http://pm1.narvii.com/7945/f9d9c5358ebb70980d5529baff7ac370b1de453er1-1024-533v2_00.jpg"/>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Soldado</h3>
+                                        <h4 class="card-subtitle">Dyrrot</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde minima rem eaque laborum ullam delectus ad ab? Corporis accusantium quam ipsum amet quia tempora rem possimus quas minus sint!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <div class="card-header">
+                                        God of war
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/pt/6/6c/God_of_War_3_capa.png"/>
+                                    <div class="card-body">
+                                        <h3 class="card-title">GOD OF WAR 3</h3>
+                                        <h4 class="card-subtitle">GOD OF WAR 3</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde minima rem eaque laborum ullam delectus ad ab? Corporis accusantium quam ipsum amet quia tempora rem possimus quas minus sint!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <div class="card-header">
+                                        GOD OF WAR 
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/pt/8/82/God_of_War_2018_capa.png"/>
+                                    <div class="card-body">
+                                        <h3 class="card-title">GOD OF WAR 4</h3>
+                                        <h4 class="card-subtitle">GOD OF WAR 4</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde minima rem eaque laborum ullam delectus ad ab? Corporis accusantium quam ipsum amet quia tempora rem possimus quas minus sint!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <div class="card-header">
+                                        GOD OF WAR 
+                                    </div>
+                                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png"/>
+                                    <div class="card-body">
+                                        <h3 class="card-title">GOD OF WAR 5</h3>
+                                        <h4 class="card-subtitle">GOD OF WAR 5</h4>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde minima rem eaque laborum ullam delectus ad ab? Corporis accusantium quam ipsum amet quia tempora rem possimus quas minus sint!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-campo">
-                    <label for="cpf">Cpf</label>
-                    <input type="text" id="cpf" name="cpf">
+            </div>
+        </section>
+        <section id="promocoes">
+        </section>
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Entre em contato</h2>
+                        <form>
+                            <label class="form-label" for="nome">Seu nome:</label>
+                            <input class="form-control" type="text" id="nome" />
+                            <label for="email" class="form-label">Seu e-mail:</label>
+                            <input id="email" type="email" class="form-control">
+                            <label for="mensagem" class="form-label">Sua mensagem</label>
+                            <textarea id="mensagem" class="form-control"></textarea>
+                            <div class="form-check form-switch">
+                                <label class="form-check-label" for="aceito-termos">Li e concordo com os termos</label>
+                                <input class="form-check-input" type="checkbox" id="aceito-termos">
+                            </div>
+                            <button class="btn btn-success">Enviar</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-campo">
-                    <label for="endereço">Endereço</label>
-                    <input type="text" id="endereço" name="endereço">
+            </div>            
+        </section>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="mensagens-alerta">
+            <header class="toast-header">
+                <strong>Importante</strong>
+            </header>
+            <div class="toast-body">
+                Você possui 10 mensagens não lidas
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
+                        Descartar
+                    </button>
                 </div>
-                <div class="form-campo">
-                    <label for="CEP">CEP</label>
-                    <input type="text" id="CEP" name="CEP">
-                </div>
-                <button type="submit">enviar</button>
-            </form>
+            </div>
         </div>
-    </section>
-    <footer>
-        <div class="container container-flex">
-            <p>2022 &copy; Formulario - Todos os direitos reservados</p>
-            <ul class="container-flex">
-                <li>
-                    <a href="#">
-                    <img src="./icones/facebook.png"" alt="Facebook">
-                </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <img src="./icones/instagram.png" alt="instagram">
-                </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <img src="./icones/youtube.png" alt="youtube">
-                </a>
-                </li>
-            </ul>
-        </div>
-    </footer>   
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/jquery.mask.js"></script>
-    <script src="./js/jquery.validate.js"></script>
-    <script src="./js/messages_pt_BR.min.js"></script>
-    <script src="./main.js"></script>
+    </div>
+    
+    <script src="/BOOTSTRAP AVANÇADO/lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btn-checar-emails');
+        const mensagem = document.getElementById('mensagens-alerta')
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function() {
+                const toast = new bootstrap.Toast(mensagem);
+                toast.show();
+            })
+        } 
+    </script>
 </body>
 </html>

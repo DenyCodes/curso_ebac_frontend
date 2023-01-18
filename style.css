@@ -1,0 +1,25 @@
+.navbar-nav .nav-link.active {
+    color:#fff;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    z-index: 3;
+    top:0;
+    background-color: #740d0d;
+}
+
+ul .nav-link {
+    color: #fff;
+}
+h1 {
+    color: rgb(255, 255, 255);
+}
+h2 {
+    
+    padding-top: 5%;
+}
