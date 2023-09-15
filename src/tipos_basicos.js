@@ -1,0 +1,17 @@
+"use strict";
+let estaChovendo = false;
+estaChovendo = true;
+let idade = 29;
+let altura = 1.75;
+const nacionalidade = 'brasileira';
+const colegas = ['lucas', 'fernanda'];
+const notas = [7, 9, 5, 8];
+const lista = ['denis', true, 29];
+let idadeDaAna = 25;
+idadeDaAna = '25 anos';
+let dadosDaApi;
+dadosDaApi = 10;
+dadosDaApi = true;
+dadosDaApi = [1, 2, 3, 4, 5, 6, 7, 8];
+dadosDaApi = 'string';
+let curso = 'front-end';
