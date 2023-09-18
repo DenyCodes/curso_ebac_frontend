@@ -1,8 +1,7 @@
-function CalculaIMC (peso: number, altura: number): number {
-    return peso * altura;
+function calculaArea(base: number, altura:number): number {
+    return base * altura;
 }
 
-function BemVindo (nome: string){
-    nome = "denis";
-    console.log("Olá"+`${nome}`);
+function BemVindo (nome: string): string {
+    return "Olá"+`${nome}`;
 }
